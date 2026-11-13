@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato – NatalModelX</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="pagina-contato">
+    
+  <header>
+    <div class="container header-inner">
+      <nav id="mainNav">
+        <a href="index.html">Home</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="contato.html" class="active">Contato</a>
+        <a href="produtos.html">Produtos</a>
+        <a href="carrinho.html" class="cart-link">Carrinho <span id="cartCount"></span></a>
+       
+      </nav>
+    </div>
+  </header>
+
+  <section class="container contato-conteudo">
+    <h1>Fale Conosco</h1>
+    <center><p>Tem dúvidas, sugestões ou quer encomendar um produto especial? Preencha o formulário abaixo!</p></center>
+
+    <form id="formContato" class="form-contato" novalidate>
+
+    <div class="campo">
+        <label for="nome">Nome completo *</label>
+        <input type="text" id="nome" name="nome" required>
+        <span class="erro" id="erroNome"></span>
+    </div>
+
+    <div class="campo">
+        <label for="email">E-mail *</label>
+        <input type="email" id="email" name="email" required>
+        <span class="erro" id="erroEmail"></span>
+    </div>
+
+    <div class="campo">
+        <label for="telefone">Telefone</label>
+        <input type="tel" id="telefone" name="telefone"
+        placeholder="(11) 99999-9999">
+    </div>
+
+    <div class="campo campo-mensagem">
+        <label for="mensagem">Mensagem *</label>
+        <textarea id="mensagem" name="mensagem"
+        rows="5" required></textarea>
+        <span class="erro" id="erroMensagem"></span>
+    </div>
+
+    <div class="acoes-formulario">
+        <button type="submit" class="btn">Enviar Mensagem</button>
+        <p id="sucesso" class="sucesso"></p>
+    </div>
+
+</form>
+  </section>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <footer>
+    <div class="container">
+      <p> 2026 NatalModelX – Todos os direitos reservados 🎄</p>
+    </div>
+  </footer>
+
+  <script src="js/produtos.js"></script>
+  <script src="js/script.js"></script>
+
+<style>
+body {
+        background-image: url("contato.avif");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        min-height: 100vh;
+    }
+h1 {
+    color: #FFD700;
+    font-size: 42px;
+    text-align: center;
+    text-shadow: 2px 2px 6px #000000;
+}
+p {
+    color: #FFFFFF;
+    font-size: 18px;
+    text-shadow: 1px 1px 4px #000000;
+    line-height: 1.7;
+}
+label{color: #FFFFFF;}
+a {
+    color: #FFD700;
+    font-weight: bold;
+    text-shadow: 1px 1px 4px #000000;
+}
+
+
+
+</style>
+
+<link rel="stylesheet" href="style.css">
+</body>
+</html>

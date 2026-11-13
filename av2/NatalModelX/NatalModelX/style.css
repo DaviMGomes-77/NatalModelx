@@ -1,0 +1,695 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+
+    background-image: url("./fundo-natal.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+/* FUNDO NATALINO EXCLUSIVO DA PÁGINA DE CONTATO */
+
+body.pagina-contato {
+    min-height: 100vh;
+    background-image:
+        linear-gradient(
+            rgba(0, 0, 0, 0.30),
+            rgba(0, 0, 0, 0.30)
+        ),
+        url("fundo-natal.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+}
+
+/* Conteúdo da página de contato */
+body.pagina-contato h1,
+body.pagina-contato p,
+body.pagina-contato label {
+    color: white;
+}
+
+/* Formulário */
+body.pagina-contato form {
+    background: rgba(0, 0, 0, 0.55);
+    padding: 25px;
+    border-radius: 12px;
+    max-width: 700px;
+    margin: 30px auto;
+}
+
+/* Campos */
+body.pagina-contato input,
+body.pagina-contato textarea {
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+}
+
+/* Botão */
+body.pagina-contato button {
+    background: #b51220;
+    color: white;
+    padding: 12px 22px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+
+.adicionar-carrinho {
+    background: #b22222;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.adicionar-carrinho:hover {
+    background: #8b0000;
+}
+
+.item-carrinho {
+    background: white;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.10);
+}
+
+.item-carrinho button {
+    background: #b22222;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+#total-carrinho {
+    color: #8b0000;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.adicionar-carrinho {
+    width: 100%;
+    padding: 12px;
+    margin-top: 12px;
+    background-color: #b22222;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.adicionar-carrinho:hover {
+    background-color: #800000;
+    transform: scale(1.03);
+}
+
+/* CONFIGURAÇÃO GERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+
+    background-image: url("fundo-natal.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* CABEÇALHO */
+header {
+    background: linear-gradient(135deg, #761d27, #a52a36);
+    color: white;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.12);
+}
+
+header h1 {
+    font-size: 28px;
+}
+
+/* MENU DE NAVEGAÇÃO */
+nav {
+    background: #173d30;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 12px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #e8c878;
+}
+
+/* TÍTULO DO CARRINHO */
+h1, h2 {
+    margin-bottom: 20px;
+}
+
+body > h1 {
+    text-align: center;
+    margin-top: 35px;
+    color: #761d27;
+}
+
+/* ÁREA DOS PRODUTOS */
+#itens-carrinho {
+    max-width: 950px;
+    margin: 30px auto;
+    padding: 15px;
+}
+
+/* CARTÃO DE CADA PRODUTO */
+.item-carrinho {
+    background: white;
+    padding: 25px;
+    margin-bottom: 18px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.07);
+    border-left: 5px solid #a52a36;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.item-carrinho:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 7px 20px rgba(0,0,0,0.12);
+}
+
+.item-carrinho h3 {
+    color: #173d30;
+    font-size: 20px;
+    grid-column: 1 / -1;
+}
+
+.item-carrinho p {
+    font-size: 15px;
+    color: #666;
+}
+
+/* BOTÃO REMOVER */
+.item-carrinho button {
+    background: #a52a36;
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+    grid-column: 1 / -1;
+}
+
+.item-carrinho button:hover {
+    background: #761d27;
+}
+
+/* TOTAL DA COMPRA */
+#total-carrinho {
+    max-width: 950px;
+    margin: 20px auto;
+    padding: 25px;
+    background: #173d30;
+    color: white;
+    border-radius: 12px;
+    font-size: 25px;
+    text-align: right;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.10);
+}
+
+/* LINK VER PRODUTOS */
+a {
+    transition: 0.3s;
+}
+
+a:hover {
+    color: #a52a36;
+}
+
+/* RODAPÉ */
+footer {
+    text-align: center;
+    padding: 25px;
+    color: #777;
+    margin-top: 35px;
+}
+
+/* CELULAR */
+@media (max-width: 600px) {
+    .item-carrinho {
+        grid-template-columns: 1fr;
+        padding: 18px;
+    }
+
+    #itens-carrinho {
+        padding: 12px;
+    }
+
+    #total-carrinho {
+        margin: 15px;
+        font-size: 20px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 6px;
+    }
+}
+#mensagem-carrinho {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: #173d30;
+    color: white;
+    padding: 16px 24px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+    z-index: 9999;
+    opacity: 0;
+    transform: translateY(-15px);
+    transition: 0.3s;
+    pointer-events: none;
+}
+
+#mensagem-carrinho.mostrar {
+    opacity: 1;
+    transform: translateY(0);
+}
+/* NAVBAR DA PÁGINA DE CONTATO */
+
+body.pagina-contato header {
+    background: linear-gradient(135deg, #761d27, #a52a36);
+    padding: 25px;
+    margin: 0;
+    text-align: center;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.12);
+}
+
+body.pagina-contato nav {
+    background-color: rgba(0, 80, 50, 0.90);
+    padding: 15px;
+    position: relative;
+    z-index: 10;
+}
+
+body.pagina-contato nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 12px;
+    font-weight: bold;
+}
+
+body.pagina-contato nav a:hover {
+    color: #e8c878;
+}
+/* NAVBAR NATALMODELX */
+header {
+    background: linear-gradient(135deg, #761d27, #a52a36);
+    padding: 25px;
+    text-align: center;
+}
+
+nav {
+    background-color: rgba(0, 80, 50, 0.90);
+    padding: 15px;
+    position: relative;
+    z-index: 10;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 12px;
+    font-weight: bold;
+    text-shadow: none;
+}
+
+nav a:hover {
+    color: #e8c878;
+}
+body.pagina-contato header {
+    background: linear-gradient(135deg, #761d27, #a52a36) ;
+    padding: 25px ;
+}
+
+body.pagina-contato header nav#mainNav {
+    display: block ;
+    background: rgba(0, 80, 50, 0.90) ;
+    padding: 15px ;
+    text-align: center ;
+}
+
+body.pagina-contato header nav#mainNav a {
+    color: white ;
+    text-decoration: none ;
+    margin: 0 12px ;
+    font-weight: bold ;
+    text-shadow: none ;
+}
+/* FORMULÁRIO NATALMODELX - AJUSTE PROFISSIONAL */
+
+body.pagina-contato .form-contato {
+    width: 100%;
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 30px;
+
+    background: rgba(0, 0, 0, 0.65);
+    border-radius: 15px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    align-items: start;
+}
+
+body.pagina-contato .campo {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 8px;
+}
+
+body.pagina-contato .campo label {
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+body.pagina-contato .campo input,
+body.pagina-contato .campo textarea {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #ddd;
+    border-radius: 7px;
+    background: #fff;
+    color: #222;
+    font-size: 15px;
+    outline: none;
+}
+
+body.pagina-contato .campo input {
+    height: 45px;
+}
+
+body.pagina-contato .campo textarea {
+    min-height: 130px;
+    resize: vertical;
+}
+
+body.pagina-contato .campo input:focus,
+body.pagina-contato .campo textarea:focus {
+    border: 2px solid #b51220;
+}
+
+body.pagina-contato .campo-mensagem {
+    grid-column: 1 / -1;
+}
+
+body.pagina-contato .acoes-formulario {
+    grid-column: 1 / -1;
+    text-align: center;
+}
+
+body.pagina-contato .form-contato button {
+    background: #c8102e;
+    color: white;
+    padding: 14px 30px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+body.pagina-contato .form-contato button:hover {
+    background: #8b0000;
+    transform: translateY(-2px);
+}
+
+/* CELULAR */
+@media (max-width: 700px) {
+    body.pagina-contato .form-contato {
+        grid-template-columns: 1fr;
+        padding: 20px;
+        margin: 20px auto;
+    }
+
+    body.pagina-contato .campo-mensagem,
+    body.pagina-contato .acoes-formulario {
+        grid-column: 1;
+    }
+}
+/* FUNDO BEGE DA PÁGINA CARRINHO */
+
+body.pagina-carrinho {
+    background-image: none !important;
+    background-color: #f5f1e8 !important;
+    background-attachment: initial;
+    min-height: 100vh;
+}
+
+/* Área dos produtos no carrinho */
+body.pagina-carrinho #itens-carrinho {
+    background: transparent;
+}
+
+/* Cartão do total */
+body.pagina-carrinho #total-carrinho {
+    background: #173d30;
+    color: white;
+}
+
+
+
+.botao-musica {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 99999;
+
+    background: linear-gradient(135deg, #165c38, #0b3822);
+    color: white;
+
+    border: 1px solid #d4af37;
+    border-radius: 50px;
+
+    padding: 14px 22px;
+    font-size: 15px;
+    font-weight: bold;
+
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+
+    transition: 0.3s;
+}
+
+.botao-musica:hover {
+    transform: scale(1.05);
+    background: #217346;
+}
+
+/* =====================================
+   CONFIGURAÇÃO RESPONSIVA GERAL
+===================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    width: 100%;
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+/* IMAGENS RESPONSIVAS */
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* VÍDEOS RESPONSIVOS */
+
+video,
+iframe {
+    max-width: 100%;
+}
+
+/* CONTAINER PRINCIPAL */
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* TEXTOS RESPONSIVOS */
+
+h1 {
+    font-size: clamp(26px, 4vw, 45px);
+}
+
+h2 {
+    font-size: clamp(22px, 3vw, 35px);
+}
+
+p {
+    font-size: clamp(14px, 1.5vw, 18px);
+    line-height: 1.6;
+}
+
+/* MENU RESPONSIVO */
+
+header {
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+nav {
+    max-width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+nav a {
+    white-space: nowrap;
+}
+
+/* PRODUTOS RESPONSIVOS */
+
+.produtos,
+.produtos-container,
+.cards {
+    display: grid;
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(min(100%, 220px), 1fr)
+    );
+    gap: 20px;
+    width: 100%;
+}
+
+/* =====================================
+   TABLETS
+===================================== */
+
+@media screen and (max-width: 992px) {
+
+    .container {
+        width: 92%;
+    }
+
+    header {
+        gap: 15px;
+    }
+
+    nav {
+        gap: 12px;
+    }
+
+    section {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+}
+
+/* =====================================
+   CELULARES
+===================================== */
+
+@media screen and (max-width: 768px) {
+
+    body {
+        background-attachment: scroll;
+    }
+
+    .container {
+        width: 94%;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    nav a {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    button {
+        max-width: 100%;
+    }
+
+    input,
+    textarea,
+    select {
+        max-width: 100%;
+    }
+
+    section {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+
+    .produtos,
+    .produtos-container,
+    .cards {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+    }
+
+}
+
